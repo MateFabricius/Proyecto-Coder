@@ -1,0 +1,353 @@
+
+/*Estilo de Body*/
+
+body{ 
+    color: rgb(93, 38, 40);
+    background-color: rgb(247, 232, 217);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.grid_container{
+    display: grid;
+    grid-template-areas:'head head'
+                        'main main'
+                        'pie pie' ;
+}
+
+/*Header*/
+
+header{
+    grid-area: head;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+nav ul{
+    
+    padding-left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+header nav ul li{
+    list-style: none;
+}
+
+header nav ul li a{
+    text-decoration: none;
+   background-color: rgb(233, 195, 174);
+   color: rgb(93, 38, 40);
+   padding: 10px 12px 12px 13px;
+   border-radius: 10px;
+}
+
+/*Footer*/
+
+footer{
+    grid-area: pie;
+    background-color: rgb(247, 232, 217);
+    border-top: solid 2px rgb(93, 38, 40);
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+footer p{
+    color: rgb(93, 38, 40);
+    font-size: large; 
+}
+
+.display_redes{
+    display: flex;
+    align-items: center;
+} 
+
+
+/*Main de Index*/
+
+#main_index{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main_index h1{
+    width: 70%;
+    background-color: rgb(233, 195, 174);
+    text-align: center;
+    border: dashed 3px rgb(93, 38, 40);
+    padding: 10px;
+    margin: 20px 300px 20px 300px;
+}
+
+.caja1{
+    border-top: solid 2px rgb(93, 38, 40);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    background-color: rgb(233, 195, 174);
+    width: 100%;
+}
+
+.texto_caja1{
+    background-color: rgb(247, 232, 217);
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto_caja1 h2{
+    text-decoration: underline;
+}
+
+.caja2{
+    background-color: rgb(233, 195, 174);
+    display: flex;
+    justify-content: center;
+    border: 4px rgb(93, 38, 40);
+    width: 100%;
+}
+
+.texto_caja2{
+    background-color: rgb(247, 232, 217);
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto_caja2 h2{
+    text-decoration: underline;
+}
+
+.texto_caja2 p{
+    text-align: center;
+    width: 90%;
+}
+
+.caja3{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(233, 195, 174);
+    width: 100%;
+}
+
+.texto_caja3{
+    background-color: rgb(247, 232, 217);
+    width: 600px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto_caja3 h2{
+    text-decoration: underline;
+}
+
+/*Main de Boxes*/
+
+#main_boxes{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main_boxes h1{
+    width: 70%;
+    background-color: rgb(233, 195, 174);
+    text-align: center;
+    border: dashed 3px rgb(93, 38, 40);
+    padding: 10px;
+    margin: 20px 300px 20px 300px;
+}
+
+#main_boxes section{
+    display: flex;
+    gap: 30px;
+}
+
+#main_boxes section div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 2px rgb(93, 38, 40);
+    width: 50%;
+}
+
+#main_boxes section div img{
+    margin: 30px;
+}
+
+#main_boxes section div h2{
+    text-decoration: underline;
+}
+
+.parrafo_box2{
+    width: 500px;
+    text-align: center;
+}
+
+#main_boxes h3{
+    background-color: rgb(233, 195, 174);
+    text-align: center;
+    border: dashed rgb(93, 38, 40);
+    padding: 10px;
+    margin: 10px 300px 10px 300px; 
+    width: 800px;
+}
+
+/*Main de Talleres*/
+
+#main_talleres{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#main_talleres h1{
+    width: 70%;
+    background-color: rgb(233, 195, 174);
+    text-align: center;
+    border: dashed 3px rgb(93, 38, 40);
+    padding: 10px;
+    margin: 20px 300px 20px 300px;
+}
+
+#main_talleres section{
+    border: solid 2px rgb(93, 38, 40);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+#main_talleres section h2{
+    text-decoration: none;
+    background-color: rgb(233, 195, 174);
+    border: solid 2px rgb(93, 38, 40);
+    padding: 10px 180px 10px 180px;
+}
+
+#main_talleres section a{
+    text-decoration: none;
+    background-color: rgb(233, 195, 174);
+    color: rgb(93, 38, 40);
+    padding: 10px 12px 12px 13px;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+#main_talleres section img{
+    margin: 15px;
+    border: solid 2px rgb(93, 38, 40);
+}
+
+/*Main de Envios*/
+
+#main_envios{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#main_envios h1{
+    width: 70%;
+    background-color: rgb(233, 195, 174);
+    text-align: center;
+    border: dashed 3px rgb(93, 38, 40);
+    padding: 10px;
+    margin: 20px 300px 20px 300px;
+}
+
+#main_envios section{
+    background-color: rgb(233, 195, 174);
+    border: solid 2px rgb(93, 38, 40);
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#main_envios div h2{
+    text-decoration: underline;
+}
+
+#main_envios section div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#main_envios section div h3{
+    text-decoration: underline;
+}
+
+.caja_donde{
+    width: 500px;
+}
+
+.caja_horarios{
+    width: 500px;
+}
+
+#main_envios section iframe{
+    margin: 15px;
+}
+
+/*Main de Contacto*/
+
+#main_contacto{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main_contacto h1{
+    width: 70%;
+    background-color: rgb(233, 195, 174);
+    text-align: center;
+    border: dashed 3px rgb(93, 38, 40);
+    padding: 10px;
+    margin: 20px 300px 20px 300px;
+}
+
+#main_contacto div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main_contacto div h2{
+    text-decoration: underline;
+}
+
+#main_contacto div ul{ 
+    list-style: none;
+}
+
+
