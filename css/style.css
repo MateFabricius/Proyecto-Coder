@@ -11,9 +11,11 @@ body{
 
 .grid_container{
     display: grid;
-    grid-template-areas:'head head'
-                        'main main'
-                        'pie pie' ;
+    grid-template-areas:'head head head'
+                        'main main main'
+                        'pie pie pie' ;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 300px 1600px auto;
 }
 
 /*Header*/
@@ -166,10 +168,7 @@ footer p{
 
 @media (max-width: 576px) {
     #grid_container{
-        width: 100%;
-    }
-    #main_index section{
-        flex-direction: column;      
+
     }
 }
 
@@ -226,6 +225,13 @@ footer p{
     width: 800px;
 }
 
+/*Vista Mobile Boxes*/
+
+@media (max-width: 576px) {
+    #grid_container{
+        grid-template-areas: 1fr;
+}
+}
 /*Main de Talleres*/
 
 #main_talleres{
